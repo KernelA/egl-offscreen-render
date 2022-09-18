@@ -85,7 +85,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--width", dest="width", type=int, default=256)
     parser.add_argument("--height", dest="height", type=int, default=256)
-    parser.add_argument("-o", "--out_image", dest="out_image", type=str,
+    parser.add_argument("-o", "--out_image", dest="out_image", type=str, default="out.png",
                         help="A path to the output image with render")
 
     args = parser.parse_args()

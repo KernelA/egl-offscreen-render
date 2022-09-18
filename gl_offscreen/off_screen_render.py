@@ -11,7 +11,7 @@ OpenglTriangleIndexType = GL_UNSIGNED_INT
 def generate_vao(vertex_positions: np.ndarray, vertex_colors: np.ndarray, face_indices: np.ndarray):
     assert vertex_positions.ndim == 2
     assert vertex_positions.shape[1] == 3
-    assert vertex_positions.shape == vertex_colors.shape
+    assert vertex_positions.shape[0] == vertex_colors.shape[0]
     assert face_indices.ndim == 1
 
     face_indices = face_indices.astype(IndexType)
