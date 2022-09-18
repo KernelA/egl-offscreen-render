@@ -1,0 +1,7 @@
+tzlocal
+pyyaml
+numpy~=1.20
+pillow~=9.2.0
+PyOpenGL~=3.1.0
+PyOpenGL-accelerate~=3.1.0
+pyrr~=0.10.3
